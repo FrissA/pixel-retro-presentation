@@ -1,0 +1,37 @@
+@import 'pixel-retroui/dist/index.css';
+@import 'pixel-retroui/dist/fonts.css';
+
+
+:root {
+  font-family: 'Press Start 2P', monospace, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow: hidden;
+  background-color: #0a0a15;
+  color: #e0e0e0;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(135deg, #0a0a15 0%, #0f0f20 50%, #0a0a15 100%);
+}
