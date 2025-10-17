@@ -1,5 +1,4 @@
 import { useNavigate } from 'react-router-dom';
-import { Button } from 'pixel-retroui';
 import { useEffect, useCallback, useState } from 'react';
 import './SlideNavigation.css';
 
@@ -79,25 +78,9 @@ export const SlideNavigation = ({ currentSlide, totalSlides }: SlideNavigationPr
 
   return (
     <div className={`slide-navigation ${isVisible ? 'visible' : 'hidden'}`}>
-      <Button 
-        onClick={goToPrevious} 
-        disabled={currentSlide === 1}
-        className="nav-button"
-      >
-        ← Previous
-      </Button>
-      
       <div className="slide-counter">
-        {currentSlide} / {totalSlides}
+        {currentSlide}
       </div>
-      
-      <Button 
-        onClick={goToNext} 
-        disabled={currentSlide === totalSlides}
-        className="nav-button"
-      >
-        Next →
-      </Button>
     </div>
   );
 };
